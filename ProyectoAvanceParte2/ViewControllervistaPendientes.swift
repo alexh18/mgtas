@@ -14,15 +14,25 @@ class ViewControllervistaPendientes: UIViewController {
     @IBOutlet weak var lbUno: UILabel!
     @IBOutlet weak var lbCuatro: UILabel!
     
-    var Tareas : Secciones!
+    var Tareas : Secciones = Secciones()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.lbTres.text = Tareas.titulo
-        lbUno.text = Tareas.fecha
-        lbDos.text = Tareas.materia
-        lbCuatro.text = Tareas.texto
+        if Tareas.titulo != nil{
+            self.lbTres.text = Tareas.titulo
+            lbUno.text = Tareas.fecha
+            lbDos.text = Tareas.materia
+            lbCuatro.text = Tareas.texto
+        } else {
+            self.lbTres.text = "Tareas.titulo"
+            lbUno.text = "Tareas.fecha"
+            lbDos.text = "Tareas.materia"
+            lbCuatro.text = "Tareas.texto"
+        }
+        
     }
     
 

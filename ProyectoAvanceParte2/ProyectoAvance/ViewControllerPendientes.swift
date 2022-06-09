@@ -11,9 +11,10 @@ import CoreData
 class ViewControllerPendientes: UIViewController {
     var info : Secciones?
     var Tareas : [Secciones] = [Secciones] ()
+//    var pendienteSeleccionado : Secciones = Secciones()
     var tarea : Secciones = Secciones()
     var bandera = "agregar"
-   //  var myIndex = 0
+   
     
     @IBOutlet weak var txtTitulo: UITextField!
     @IBOutlet weak var txtFecha: UITextField!
@@ -163,19 +164,10 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "segue8"{
-            
-            let vistaDetalle = segue.destination as!  ViewControllervistaPendientes
-            
-            let indice = tablaPendientes.indexPathForSelectedRow
-            
-        }
-        
-        //Agregar Accion de seleccionar fila
-        
-    }
+   
+    
+
+    
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: nil)
@@ -241,4 +233,22 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
             print("No se pudo recuperar \(error), \(error.userInfo)")
         }
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        info = Tareas[indexPath.row]
+        performSegue(withIdentifier: "segue8", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue8" {
+            let vistaDetalle = segue.destination as! ViewControllervistaPendientes
+            
+            if info != nil {
+                vistaDetalle.Tareas = info!
+            }
+        }
+    }
+
 }
+
