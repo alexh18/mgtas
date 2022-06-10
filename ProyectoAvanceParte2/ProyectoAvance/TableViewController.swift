@@ -11,14 +11,14 @@ enum Info : String {
     
     case Tareas = "Tareas"
     case Ejercicio = "ejercicios"
-    case Estados = "mood"
-    case Mood = "Agua"
+    
+  
 }
 
 
 class TableViewController: UITableViewController {
     
-    var info : [secciones] = [ secciones(info: Info.Tareas.rawValue, imagen: UIImage(named: "tareas")!), secciones(info: Info.Ejercicio.rawValue, imagen: UIImage(named: "ejercicio")!),secciones(info: Info.Estados.rawValue, imagen: UIImage(named: "mood")!), secciones(info: Info.Mood.rawValue, imagen: UIImage(named: "agua")!) ]
+    var info : [secciones] = [ secciones(info: Info.Tareas.rawValue, imagen: UIImage(named: "tareas")!), secciones(info: Info.Ejercicio.rawValue, imagen: UIImage(named: "ejercicio")!)]
 
         
     
@@ -116,10 +116,7 @@ class TableViewController: UITableViewController {
             performSegue(withIdentifier: "segue1", sender: nil)
         case Info.Ejercicio.rawValue:
             performSegue(withIdentifier: "segue2", sender: nil)
-        case Info.Estados.rawValue:
-            performSegue(withIdentifier: "segue3", sender: nil)
-        case Info.Mood.rawValue:
-            performSegue(withIdentifier: "segue4", sender: nil)
+        
         default:
             break
         }

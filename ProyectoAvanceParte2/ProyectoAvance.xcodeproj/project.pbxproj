@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		33022BEF284C1BD2006E0B09 /* ViewControllerJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33022BEE284C1BD2006E0B09 /* ViewControllerJson.swift */; };
-		33022BF6284D56DE006E0B09 /* ViewControllerJson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33022BF5284D56DE006E0B09 /* ViewControllerJson2.swift */; };
 		336FB30D284972D600CEDA1A /* ViewControllervistaPendientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336FB30C284972D600CEDA1A /* ViewControllervistaPendientes.swift */; };
 		33E8064B281A1788002CF5D3 /* ViewControllerPendientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8064A281A1788002CF5D3 /* ViewControllerPendientes.swift */; };
 		33E80651281A2B03002CF5D3 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E80650281A2B03002CF5D3 /* DataBase.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		33022BEE284C1BD2006E0B09 /* ViewControllerJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJson.swift; sourceTree = "<group>"; };
-		33022BF5284D56DE006E0B09 /* ViewControllerJson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJson2.swift; sourceTree = "<group>"; };
 		336FB30C284972D600CEDA1A /* ViewControllervistaPendientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllervistaPendientes.swift; sourceTree = "<group>"; };
 		33E8064A281A1788002CF5D3 /* ViewControllerPendientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPendientes.swift; sourceTree = "<group>"; };
 		33E80650281A2B03002CF5D3 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 		4917FA4D27FDFC0100B30498 = {
 			isa = PBXGroup;
 			children = (
-				33022BF5284D56DE006E0B09 /* ViewControllerJson2.swift */,
 				336FB30C284972D600CEDA1A /* ViewControllervistaPendientes.swift */,
 				33E80650281A2B03002CF5D3 /* DataBase.swift */,
 				4917FA5827FDFC0100B30498 /* ProyectoAvance */,
@@ -189,7 +186,6 @@
 				33E80651281A2B03002CF5D3 /* DataBase.swift in Sources */,
 				4917FA7327FE0B4000B30498 /* TableViewCell.swift in Sources */,
 				33022BEF284C1BD2006E0B09 /* ViewControllerJson.swift in Sources */,
-				33022BF6284D56DE006E0B09 /* ViewControllerJson2.swift in Sources */,
 				49448568281B246B00B5B95D /* TableViewCellPendientes.swift in Sources */,
 				4917FA7127FE0AC000B30498 /* TableViewController.swift in Sources */,
 				BC6C8B1528354A7A00C83842 /* TableViewCellEjercicio.swift in Sources */,

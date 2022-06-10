@@ -2,7 +2,7 @@
 //  ViewControllervistaPendientes.swift
 //  ProyectoAvance
 //
-//  Created by Daniel Belmont on 02/06/22.
+//  Created by UNAM FCA 11 on 02/06/22.
 //
 
 import UIKit
